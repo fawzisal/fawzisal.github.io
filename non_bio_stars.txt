@@ -1,0 +1,7 @@
+andreafabrizi/Dropbox-Uploader
+nickbabcock/Pdoxcl2Sharp
+jbrownlee/CleverAlgorithms
+burke/zeus
+jnunemaker/httparty
+fabricjs/fabric.js
+DmitryBaranovskiy/raphael
