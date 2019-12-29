@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FS - Personal Site</title>
+    <link rel="stylesheet" type="text/css" href="https://fawzisal.github.io/fawzisal.github.io/assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fawzisal.github.io/fawzisal.github.io/assets/style.css">
+</head>
+
+<body>
+      <div class="nav-bar navbar navbar-dark	 bg-dark	 navbar-expand-md">
+      	<div class="container">
+      	<a class="navbar-brand" href="#">FS</a>
+      	<!-- <div class="collapse navbar-collapse"> -->
+      		<ul class="navbar-nav">
+      			<li class="nav-item">
+      				<a class="nav-link" href="#">Comp</a>
+      			</li>
+      		</ul>
+      	<!-- </div> -->
+      	</div>
+      </div>
+    <div id="app" class="container">
+        <div class="row">
+	        <!-- <div class="prod"> -->
+	            <div class="prod-image col-lg-8 col-sm-12">
+	                <img id="prod" :src="prod.img">
+	            </div>
+	            <div class="prod-info col-lg-4 col-sm-12	">
+	                <h1>{{prod.name}}</h1>
+	                <h2>{{title}}</h2>
+	                <button
+	                	@clicks="addToCart"
+	                	:class="{ disabledButton: !prod.instock()}"
+                	 	:disabled="!prod.instock()">
+	                	Add to cart
+	                </button>
+	                <p v-if="prod.inv > 10">In stock</p>
+	                <p v-else-if="prod.inv > 0">Almost sold out</p>
+	                <p v-else>Out of stock</p>
+	                <p v-show="prod.sale">SALE!!!</p>
+	                <ul>
+	                    <li v-for="d in prod.details">{{d}}</li>
+	                </ul>
+	                <div
+	                	v-for="t in prod.types"
+	                	class="color-box"
+	                	:style="{backgroundColor: t.color}"
+	                	:key="t.id"
+	                	@mouseover="updateProduct(t)">
+	                </div>
+	                <button>{{cart.quantity}} items in cart</button>
+	            </div>
+	        <!-- </div> -->
+        </div>
+    </div>
+    <script src="https://fawzisal.github.io/fawzisal.github.io/assets/vue.js"></script>
+    <script src="https://fawzisal.github.io/fawzisal.github.io/pg/pg.js"></script>
+</body>
+
+</html>
