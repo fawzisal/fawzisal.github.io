@@ -1,2 +1,2 @@
 
-Check it out at [fawzisal.github.io](http://fawzisal.github.io/index.html)
+Check it out: [fawzisal.github.io](http://fawzisal.github.io/)
