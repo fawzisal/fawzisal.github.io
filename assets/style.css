@@ -1,12 +1,40 @@
-img {
-  max-width: 100%;
-}
-.github {
-  color: white;
+img { max-width: 100%; }
+.github { color: white; }
+.color-box { width: 40px; height: 40px; margin-top: 5px; }
+
+.sps {
+	/* position: fixed; */
+	background: #fff;
+	z-index: +1;
+	margin-bottom: 3em;
+	transition: all 0.25s ease; }
+/* .sps-bottom { padding-top: 3em; margin-top: 3em; } */
+/* .sps-disabled { position: relative; } */
+
+.langcomp th:nth-child(1), .langcomp td:nth-child(1) {left:0px;background-color:#bcbcbc;}
+.langcomp th:nth-child(2), .langcomp td:nth-child(2) {left:0px;background-color:#cfcfcf;}
+.langcomp th:nth-child(3), .langcomp td:nth-child(3) {left:0px;background-color:#dddddd;}
+.langcomp th:nth-child(4), .langcomp td:nth-child(4) {padding:1em;position:sticky;left:0px;background-color:#eee;}
+/* .langcomp thead {position: sticky; top: 0;} */
+
+.table-responsive-custom {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
-.color-box {
-  width: 40px;
-  height: 40px;
-  margin-top: 5px;
-}
+.langcomp th, .langcomp td { max-width:150px; min-width:150px; }
+.langcomp th.thid, .langcomp td.thid { max-width:40px; min-width:20px; }
+
+.tableFixHead          { overflow-y: auto; max-height: 600px; }
+.tableFixHead thead th { position: sticky; top: 0; z-index: +1; }
+
+/* Just common table stuff. Really. */
+/* table  { border-collapse: collapse; width: 100%; } */
+/* th, td { padding: 8px 16px; } */
+/* th     { background:#eee; } */
+
+

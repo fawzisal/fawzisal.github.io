@@ -24,4 +24,4 @@ var	app	= new Vue({
 	computed: {
 		title: function() { return this.prod.brand + ' ' + this.prod.name; }
 	}
-})
+});
