@@ -25,3 +25,6 @@ var	app	= new Vue({
 		title: function() { return this.prod.brand + ' ' + this.prod.name; }
 	}
 });
+
+iframeHeight=parseInt($(window).height(),0)-parseInt($('#navbar').height())-50;
+$('#pm-rss-feed').css('height', ''+iframeHeight+'px');

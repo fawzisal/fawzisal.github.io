@@ -37,4 +37,6 @@ img { max-width: 100%; }
 /* th, td { padding: 8px 16px; } */
 /* th     { background:#eee; } */
 
-
+img#gh-logo {
+  max-height:  1em;
+}
