@@ -29,4 +29,6 @@ var	app	= new Vue({
 iframeHeight=parseInt($(window).height(),0)-parseInt($('#navbar').height())-50;
 $('#pm-rss-feed').css('height', ''+iframeHeight+'px');
 
-if (Math.random() > 0.9) { $("p.intro").toggle(); }
+$("span.sentence").each(function(index){
+	if (Math.random() > 0.9) { $(this).children().toggle(); }
+});
